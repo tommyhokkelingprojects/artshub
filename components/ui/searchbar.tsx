@@ -60,7 +60,7 @@ export default function SearchBar() {
 
         {/* Text area */}
         <textarea 
-          className="flex-grow text-lg mt-[8px] mb-[8px] bg-transparent resize-none focus:outline-none"
+          className="flex grow text-lg mt-[8px] mb-[8px] bg-transparent resize-none focus:outline-none"
           rows={1}
           value={val} 
           onChange={handleChange}
