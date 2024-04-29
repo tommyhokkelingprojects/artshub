@@ -51,9 +51,9 @@ export default function SearchBar() {
   }, [val]);
 
   return (
-    <div className={`flex relative z-3 mx-auto w-auto max-w-[584px] min-h-[48px] border-[1px] border-gray-500 rounded-[24px] ${isActive ? 'bg-white shadow-md' : ''}`}>
+    <div className={`flex relative z-3 mx-auto w-auto max-w-[584px] min-h-[46px] border-[1px] border-gray-500 rounded-[24px] ${isActive ? 'bg-white shadow-md' : ''}`}>
         {/* Button container */}
-        <div className='w-[48px] h-[48px] flex items-center justify-center'>
+        <div className='w-[46px] h-[46px] flex items-center justify-center'>
           <Button className="p-[8px] h-[36px] w-[36px] bg-transparent hover:bg-gray-200 rounded-full" type='submit'>
             <svg xmlns="http://www.w3.org/2000/svg" fill='none' focusable="false" viewBox="0 0 24 24" height="24px" width="24px" stroke="black" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -79,7 +79,7 @@ export default function SearchBar() {
 
         {/* Clear textarea button */}
         {val && (
-          <div className='absolute right-0 w-[48px] h-[48px] flex items-center justify-center'>
+          <div className='absolute right-0 w-[46px] h-[46px] flex items-center justify-center'>
             <Button className="p-[8px] h-[36px] w-[36px] bg-transparent hover:bg-gray-200 rounded-full" type="reset">
               <svg onClick={handleClear} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black" strokeWidth="2" height="20" width="20">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/>
